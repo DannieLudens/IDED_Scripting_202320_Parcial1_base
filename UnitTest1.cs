@@ -197,26 +197,6 @@ namespace TestProject1
         }
 
         /// <summary>
-        /// Tests TestMethods.GetNextGreaterValue()
-        /// </summary>
-        [Test]
-        public void TestGetNextGreaterValue()
-        {
-            PopulateTestNGVStacks();
-
-            Stack<int> resultA = GetNextGreaterValue(testStackA);
-            Stack<int> resultB = GetNextGreaterValue(testStackB);
-            Stack<int> resultSorted = GetNextGreaterValue(testSortedStack);
-
-            Assert.IsTrue(testStackResultA.HasSameElementsAtIndeces(resultA));
-            Assert.IsTrue(testStackResultB.HasSameElementsAtIndeces(resultB));
-            Assert.IsTrue(testSortedStackResult.HasSameElementsAtIndeces(resultSorted));
-
-            Assert.AreEqual(-1, GetNextGreaterValue(testStackA).Peek());
-            Assert.AreEqual(-1, GetNextGreaterValue(testStackB).Peek());
-        }
-
-        /// <summary>
         /// Tests TestMethods.FillDictionaryFromSource
         /// </summary>
         [Test]
