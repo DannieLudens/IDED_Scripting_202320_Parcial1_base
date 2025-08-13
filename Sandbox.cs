@@ -20,7 +20,7 @@ namespace TestProject1
                 Console.WriteLine($"{pair.Key} => {pair.Value}");
             }
 
-            Console.WriteLine("/nPrueba de clasificación y adición de tickets\n");
+            Console.WriteLine("\nPrueba de clasificación y adición de tickets\n");
 
             // Crear lista de tickets de ejemplo
             var tickets = new List<Ticket>
@@ -33,7 +33,18 @@ namespace TestProject1
                 new Ticket(Ticket.ERequestType.Subscription, 80),
                 new Ticket(Ticket.ERequestType.Payment, 80),
                 new Ticket(Ticket.ERequestType.Cancellation, 1),
-
+                new Ticket(Ticket.ERequestType.Subscription, 30),
+                new Ticket(Ticket.ERequestType.Cancellation, 80),
+                new Ticket(Ticket.ERequestType.Payment, 10),
+                new Ticket(Ticket.ERequestType.Payment, 6),
+                new Ticket(Ticket.ERequestType.Cancellation, 39),
+                new Ticket(Ticket.ERequestType.Subscription, 95),
+                new Ticket(Ticket.ERequestType.Subscription, 43),
+                new Ticket(Ticket.ERequestType.Cancellation, 70),
+                new Ticket(Ticket.ERequestType.Payment, 15),
+                new Ticket(Ticket.ERequestType.Payment, 41),
+                new Ticket(Ticket.ERequestType.Subscription, 66),
+                new Ticket(Ticket.ERequestType.Cancellation, 3),
             };
 
             // Clasificar tickets
